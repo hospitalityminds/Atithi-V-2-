@@ -4256,7 +4256,7 @@ form{
 
 .welcome .section-header span{
 	color: var(--main-color);
-	font-family: 'Newsreader', serif;
+	/* font-family: 'Newsreader', serif; */
 }
 
 .welcome .description{
@@ -4603,18 +4603,18 @@ section.flat-row.section-product{
 	text-transform: uppercase;
 	font-weight: 600;
 	font-family: "Poppins", sans-serif;
-
+    font-size: 1.3rem;
 }
 
 
 .section-product span:nth-child(1){
-	font-size: 1.6rem;
+	/* font-size: 1.6rem; */
 	transition-delay: .2s;
 }
 
 
 .section-product span:nth-child(2){
-	font-size: 1.3rem;
+	/* font-size: 1.3rem; */
 	transition-delay: .3s;
 }
 
@@ -4789,6 +4789,16 @@ section.flat-row.section-product{
     padding:20px 0px 0px;
     /* background: #212529; */
 	background: linear-gradient( to bottom right,rgba(0,0,0,0.8),rgba(0,0,0,.7)),url(../images/map.png) no-repeat;
+}
+
+.footer h1{
+    color: var(--title-color);
+    font-size: 18px;
+    opacity: .9;
+}
+
+.footer h1 span{
+    color: var(--main-color);
 }
 
 .footer h4{
@@ -5204,7 +5214,9 @@ section.flat-row.section-product{
 }
 
 .section-flex .section-content .title{
-    font-size: 50px;
+	max-width: 550px;
+    font-size: 40px;
+	line-height: 50px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -5240,7 +5252,7 @@ section.flat-row.section-product{
 
 .block-container .block{
     position: relative;
-    height: 250px;
+    height: 270px;
     padding: 20px 20px;
     box-shadow: 0 3px 10px rgba(0,0,0,.3);
     display: flex;
@@ -5294,6 +5306,7 @@ header .logo{
 
 header .logo img{			
 	max-width: 70px;
+	object-fit: cover;
 }
 
 header .col-lg-3{
@@ -5447,12 +5460,12 @@ header .col-lg-3{
 
 
  .video-banner-container{
-	 position: relative;
-      width: 100%;
-    height: 100vh;
+	position: relative;
+    width: 100%;
+    height: 500px;
     /* padding: 10px; */
     background:white;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	/* overflow: hidden; */
  }
 
@@ -5462,7 +5475,6 @@ header .col-lg-3{
 	left:0;
     width: 100%;
 	height: 100%;
-    object-fit: contain;
 }
 
 .video-banner-container .vhost{
@@ -5479,7 +5491,7 @@ header .col-lg-3{
 
 .custom-carousel{
     width: 100%;
-    height: 90vh;
+    height: 75vh;
     position: relative;
     overflow: hidden;
 }
@@ -5487,7 +5499,7 @@ header .col-lg-3{
 .custom-carousel .banner1,
 .custom-carousel .banner2{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     left:0;
     top:0;
@@ -5501,7 +5513,7 @@ header .col-lg-3{
     left:50%;
     top:50%;
     transform:translate(-50%,-50%);
-    animation: Bannerzoom-out 6s linear infinite;
+    animation: Bannerzoom-out 8s linear infinite;
 }
 
 .custom-carousel .banner-content{
@@ -5534,7 +5546,7 @@ header .col-lg-3{
     color: var(--title-color);
 	transform: translateY(-250%);
 	opacity: 0;
-	animation: animate 3.5s infinite .4s forwards;
+	animation: animate 3.5s ease-in-out infinite .4s;
 }
 
 .custom-carousel .banner-content>h2{
@@ -5545,7 +5557,7 @@ header .col-lg-3{
 	text-align: center;
 	transform: translateY(250%);
 	opacity: 0;
-	animation: animate 3.5s infinite .4s forwards;
+	animation: animate 3.5s ease-in-out infinite .4s;
 }
 
 .custom-carousel .banner-content>h1 span{
@@ -5647,7 +5659,7 @@ header .col-lg-3{
 	}
 
 	.section-flex .section-content .title{
-		font-size: 36px;
+		font-size: 30px;
 		text-align: center;
 	}
 
@@ -5925,3 +5937,54 @@ header .col-lg-3{
     justify-content: space-between!important;
     flex-direction: row!important;
 }
+
+
+
+  
+/* *************   Social float start   ***************** */
+
+.social-float{
+    position: fixed;
+    top:50%;
+    left:0%;
+    transform: translatey(-50%);
+    background: var(--main-color);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 1111;
+    overflow: hidden;
+}
+
+.social-float-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-float-flex a{
+    padding: 7px 10px;
+    font-size: 24px;
+    color: var(--title-color);
+}
+
+
+.social-float-flex a:nth-child(1){
+    background: #25D366;
+}
+
+.social-float-flex a:nth-child(2){
+    background: #e4405f;
+}
+
+.social-float-flex a:nth-child(3){
+    background: #3b5999;
+}
+
+.social-float-flex a:nth-child(4){
+    background: #00c300;
+    font-size: 20px;
+}
+
+
+.social-float-flex a:last-child{
+    border:none;
+}    
