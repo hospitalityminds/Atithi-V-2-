@@ -5744,12 +5744,13 @@ header .col-lg-3{
 
 
 	.video-banner-container{
-		height: 320px;
+		height: 300px;
 		margin-bottom: 0px;
 	}
 
 	.video-banner-container .vhost{
-		height: 280px;
+		height: 250px;
+		object-fit: initial;
 	}
 
 }
