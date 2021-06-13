@@ -3776,10 +3776,15 @@ form{
   .tracker p{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
-	color: #000;
+	color:var(--bold-color);
   }
+  .tracker span{
+    color: var(--text-color);
+  }
+
   .tracker .checked {
 	color: var(--main-color);
+	opacity: 1;
   }
   /* Hide all steps by default: */
 .tab {
@@ -4450,10 +4455,10 @@ padding: 20px 20px;
 	font-size: 30px;
 }
 
-#mainnav > ul > li:last-child > a{
+/* #mainnav > ul > li:last-child > a{
     font-size: 22px;
     color:#389168;
-}
+} */
 
 #mainnav > ul > li:last-child > a:hover::before{
     display: none;
@@ -4557,6 +4562,10 @@ section.flat-row.section-product{
 
 .section-product .text-box-inner-container.tbic3:after{
 	background: url("https://hikerwolf.com/wp-content/uploads/2020/03/Kashmir-4-999x800.jpg") center / cover no-repeat;
+}
+
+.section-product .text-box-inner-container.tbic4:after{
+	background: url("https://lp-cms-production.imgix.net/2019-06/d0d932d378a5c596ed2dcb299a1d77b1-europe.jpg?auto=format&fit=crop&ixlib=react-8.6.4&h=520&w=1312") center / cover no-repeat;
 }
 
 
@@ -4664,9 +4673,15 @@ section.flat-row.section-product{
 }
 
 .faq h4{
-    font-size: 17px;
+	font-family: 'Poppins', sans-serif!important;
+    font-size: 16px;
     text-align: center;
 }
+
+.faq h4 a{
+	color: var(--main-color);
+	  font-weight: 800;
+  }
 
 .faq .underline{
     display: flex;
@@ -4688,7 +4703,7 @@ section.flat-row.section-product{
 
 .question p{
    max-width: 80%;
-   margin-top: 5px;
+   margin-top: 8px;
    transition: all 0.3s;
    max-height: 0;
    font-size: 15px;
@@ -4697,7 +4712,7 @@ section.flat-row.section-product{
    background:transparent;
    overflow: hidden;
    color: var(--title-color);
-   padding-left: 30px;
+   /* padding-left: 30px; */
 }
 
 .question button{
@@ -4722,6 +4737,7 @@ section.flat-row.section-product{
 }
 
 .question button span{
+	line-height: 20px;
     margin-right: 20px;
 }
 
@@ -4757,6 +4773,7 @@ section.flat-row.section-product{
     font-weight: 600;
     /* padding: 20px 0px 10px; */
     border:none;
+	text-align: center;
     background: transparent;
     justify-content: center;
 }
@@ -5291,11 +5308,18 @@ section.flat-row.section-product{
 
 .section .para2{
     padding: 20px 0;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
+	font-weight: 700;
 }
 
+.section .para{
+	font-size: 16px;
+}
 
+.section .para span{
+	color: var(--main-color);
+}
 
 
 
@@ -5497,7 +5521,9 @@ header .col-lg-3{
 }
 
 .custom-carousel .banner1,
-.custom-carousel .banner2{
+.custom-carousel .banner2,
+.custom-carousel .banner3,
+.custom-carousel .banner4{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -5546,7 +5572,7 @@ header .col-lg-3{
     color: var(--title-color);
 	transform: translateY(-250%);
 	opacity: 0;
-	animation: animate 3.5s ease-in-out infinite .4s;
+	animation: animate 3s ease-in-out infinite .2s;
 }
 
 .custom-carousel .banner-content>h2{
@@ -5557,7 +5583,7 @@ header .col-lg-3{
 	text-align: center;
 	transform: translateY(250%);
 	opacity: 0;
-	animation: animate 3.5s ease-in-out infinite .4s;
+	animation: animate 3s ease-in-out infinite .2s;
 }
 
 .custom-carousel .banner-content>h1 span{
@@ -5579,10 +5605,17 @@ header .col-lg-3{
 }
 
 .custom-carousel .banner1{
-    animation: slide1 7.5s linear infinite;
+    animation: slide1 12.5s linear infinite;
 }
 .custom-carousel .banner2{
-    animation: slide2 7.5s linear infinite;
+    animation: slide2 12.5s linear infinite;
+}
+
+.custom-carousel .banner3{
+    animation: slide3 12.5s linear infinite;
+}
+.custom-carousel .banner4{
+    animation: slide4 12.5s linear infinite;
 }
 
 
@@ -5590,11 +5623,17 @@ header .col-lg-3{
     0%{
         visibility: visible;
     }
+    25%{
+        visibility: hidden;
+    }
     50%{
         visibility: hidden;
     }
-    100%{
+    75%{
         visibility: hidden;
+    }
+    100%{
+        visibility: visible;
     }
 }   
 
@@ -5602,11 +5641,55 @@ header .col-lg-3{
     0%{
         visibility: hidden;
     }
+    25%{
+        visibility: hidden;
+    }
     50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+} 
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+        z-index: 999;
+    }
+    100%{
+        visibility: hidden;
+    }
+} 
+
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
         visibility: hidden;
     }
     100%{
         visibility: visible;
+        z-index: 1000;
     }
 } 
 
@@ -5635,7 +5718,9 @@ header .col-lg-3{
     }
 
     .custom-carousel .banner1,
-    .custom-carousel .banner2{
+    .custom-carousel .banner2,
+	.custom-carousel .banner3,
+    .custom-carousel .banner4{
         width: 100%;
         height: 100%;
     }
@@ -5683,7 +5768,9 @@ header .col-lg-3{
     }
 
     .custom-carousel .banner1,
-    .custom-carousel .banner2{
+    .custom-carousel .banner2,
+	.custom-carousel .banner3,
+    .custom-carousel .banner4{
         width: 100%;
         height:400px;
     }
@@ -5713,7 +5800,9 @@ header .col-lg-3{
     }
 
 	.custom-carousel .banner1,
-    .custom-carousel .banner2{
+    .custom-carousel .banner2,
+	.custom-carousel .banner3,
+    .custom-carousel .banner4{
         width: 100%;
         height: 300px;
     }
