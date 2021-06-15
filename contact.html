@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <!--<![endif]-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
@@ -7,7 +7,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>AthithiAdvisor</title>
+    <title>Why AthithiAdvisor</title>
 
     <meta name="author" content="AtithiAdvisor.com">
 
@@ -19,10 +19,11 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
     <!-- REVOLUTION LAYERS STYLES -->
     <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
@@ -35,6 +36,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+     <!-- Swiper slider -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     
 
 </head>
 
@@ -49,8 +53,8 @@
     <!-- Boxed -->
     <div class="boxed">
 
-         <!-- Header -->
-         <header id="header" class="header clearfix">
+        <!-- Header -->
+        <header id="header" class="header clearfix">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-5">
@@ -79,7 +83,7 @@
                                     </li>
                                     
                                     <li><a href="whyAtithi.html">Why Atithi Advisor</a></li>
-    
+
                                     <li>
                                         <a href="Host.html">Join as Host</a>
                                         
@@ -88,6 +92,7 @@
                                         <a href="Atithi.html">Join as Atithi</a>
                                         
                                     </li>
+                            
                                     
                                     <li>
                                         <a href="#" ><i class="fa fa-user-plus"></i> Log In</a>
@@ -112,7 +117,7 @@
                                             </li>
                                         </ul>
                                     </li>
-    
+
                                    
                                 </ul><!-- /.menu -->
                             </nav><!-- /.mainnav -->
@@ -125,147 +130,87 @@
                 </div><!-- /.row -->
             </div>
         </header><!-- /.header -->
-       <!-- *******************************  Form start   **************************************** -->
 
- <div class="form-container">
-      <div class="container">
 
-        <h1 style="font-family: 'Poppins', sans-serif !important "><span style="color: #ea7a27;">Host </span>Signup</h1>
+    
+          <!-- ****************************  Custom Carousel   ************************* -->
 
-        <form>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Business Name *</label>
-                    <input type="text" class="form-control" placeholder="Enter Business name">
-                </div>
-
-                <div class="form-group file-select">
-                    <label for="exampleFormControlFile1">Attach min 2 Photo *</label>
-                    <div class="d-flex align-item-center">
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Business Address*</label>
-                    <input type="text" class="form-control" placeholder="Enter Business address">
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="Name">Location*</label>
-                        <input type="email" name="fname">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="Name">Pincode*</label>
-                        <input type="text" name="lname">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="Name">Phone Number 1 *</label>
-                        <input type="text" placeholder="+91 000000000" name="lname">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="Name">Phone Number 2 *</label>
-                        <input type="text" placeholder="+91 000000000" name="lname">
-                    </div>
-                </div>
-
-                
-                <!-- <div class="form-group">
-                    <label for="exampleInputEmail1">Website (if any)</label>
-                    <input type="text"  placeholder="xyz.com" class="form-control">
-                </div> -->
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="Name">Email Id *</label>
-                        <input type="email" placeholder="example@gmail.com" name="fname">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputEmail1">Website (if any)</label>
-                         <input type="text"  placeholder="xyz.com" class="form-control">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputState">Legal Proof of Hotel *</label>
-                        <select id="inputState" class="form-control">
-                          <option selected>Choose...</option>
-                          <option>GST Registration</option>
-                          <option>Electricity Bill</option>
-                          <option>Letter form Local Authority</option>
-                          <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group file-select col-md-6">
-                        <label for="exampleFormControlFile1">Upload Legal Proof *</label>
-                        <div class="d-flex align-item-center">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                          
-                        </div>
-                    </div>
-
-                </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="exampleInputEmail1">Contact person name *</label>
-                    <input type="email" class="form-control">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputState">Designation *</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>Owner</option>
-                      <option>Partner</option>
-                      <option>Director</option>
-                      <option>Designated Partner</option>
-                      <option>Manager</option>
-                      <option>Authorised Representative</option>
-                    </select>
-                </div>
+          <div class="custom-carousel">
+            <div class="banner1">
+                 <img src="images/slides/atithi.jpg" alt="Atithi Advisor">
+                 <div class="banner-content">
+                     <h1><span>Contact</span> Us</h1>
+                 </div>
             </div>
-            
-                <div class="form-row">
-                  
-                    <div class="form-group col-md-6">
-                    <label for="exampleInputEmail1">Trip Advisor Rating </label>
-                    <input type="text"  class="form-control">
+            <div class="banner2">
+                <img src="images/slides/atithi.jpg" alt="Atithi Advisor">
+                <div class="banner-content">
+                    <h1><span>Contact</span>Us</h1>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="exampleInputEmail1">Other Rating</label>
-                    <input type="text"  class="form-control">
-                </div>
-               
-              
-            </div>
-
-            <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="exampleInputEmail1">Social Media Links</label>
-                <input type="text"  class="form-control">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="parentCompanyName">Parent Company  (If any)</label>
-                <input type="text" name="parentCompanyName" class="form-control">
-            </div>
-          
+           </div>
         </div>
-               
 
-                <div class="button-container">
-                    <button type="submit" class="btn submit-btn" ><a href="Unique-form.html">Submit</a></button>
-                </div>
-            </form>
-          
-    </div>       
- </div>
-     
 
- 
+        
+    <div class="contact-container">
+        <div class="container">
+
+                    <h1 class="contact-title">Send us a Message</h1>
+
+
+                    <div class="block-container">
+    
+                        <div class="block">
+                            <h2>Host Helpdesk</h2>
+                            <a href="mailto: Host@atithiadvisor.com">Host@atithiadvisor.com</a>
+                        </div>
+                
+                        <div class="block">
+                            <h2>Atithi Helpdesk</h2>
+                            <a href="mailto: guest@atithiadvisor.com">guest@atithiadvisor.com</a>
+                        </div>
+                
+                        <div class="block">
+                            <h2>Advertise with us</h2>
+                            <a href="mailto: advertising@atithiadvisor.com">advertising@atithiadvisor.com</a>
+                        </div>
+                    </div>    
+
+
+
+                    <form action="contact.php" method="POST">
+
+                        <div class="form-row d-flex">
+                            <div class=" col-md-6 col-12">
+                                <label for="Name">Name</label>
+                                <input type="text" name="fname">
+                            </div>
+
+                            <div class=" col-md-6 col-12">
+                                <label for="Name">Mobile no</label>
+                                <input type="text" name="mobile">
+                            </div>   
+                        </div>
+
+                            <div class="form-group col-md-12">
+                                <label for="Name">Email</label>
+                                <input type="text" name="email">
+                            </div>
+                            
+                            <div class="form-group col-md-12">
+                                <label for="Name">Message</label>
+                                <textarea name="message" name="message" cols="30" rows="4"></textarea>
+                            </div>
+                        
+                            <div class="form-button">
+                                <button type="submit" class="button">Submit</button>
+                            </div>
+                        </form>       
+            </div>
+        </div>    
+    </div>
+
+
 
 
 
@@ -339,7 +284,6 @@
             <a href="tel: +91 9779555944"><i class="fas fa-phone-alt"></i></a>
         </div>
     </div>
-  
     
     <!-- ***************************  Team PopUp container  *************************** -->
   
@@ -361,8 +305,6 @@
   
  
 
-
-    
         <div class="modal fade flat-popupform" id="popup_login">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -422,7 +364,19 @@
                 </div>
             </div>
         </div>
-
+<div class="demo">
+    <!-- <a class="button" href="#">Click here!</a> -->
+  
+    <a href="#" class="float">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        <button type="submit" style="border-radius: 50%;" class="button">View Demo!</button>
+        </a>
+    <!-- <a class="svg-btn float">
+      <svg height="210" width="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill: #0091b2;" />
+      </svg>
+    </a> -->
+</div>
         <!-- Go Top -->
         <a class="go-top effect-button">
             <i class="fa fa-angle-up"></i>
@@ -439,50 +393,12 @@
     <script src="javascript/jquery-countTo.js"></script>
     <script src="javascript/owl.carousel.js"></script>
     <script src="javascript/jquery.cookie.js"></script>
-    <!-- <script src="../../ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script> -->
+    <script src="../../ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="javascript/parallax.js"></script>
     <script src="javascript/bootstrap-slider.min.js"></script>
-    <script src="javascript/smoothscroll.js"></script>
 
     <script src="javascript/main.js"></script>
-
-    <!-- Revolution Slider -->
-    <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="revolution/js/slider.js"></script>
-  
     
-    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script>
-        $(function() {
-    $( "#dialog" ).dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "explode",
-        duration: 1000
-      }
-    });
- 
-    $( "#opener" ).click(function() {
-      $( "#dialog" ).dialog( "open" );
-    });
-  });
-    </script>
-
 </body>
 
 </html>

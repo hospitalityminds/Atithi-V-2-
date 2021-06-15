@@ -6078,3 +6078,86 @@ header .col-lg-3{
 .social-float-flex a:last-child{
     border:none;
 }    
+
+
+
+
+/* ***********************   contact container   ****************************  */
+
+
+
+.contact-container{
+	padding: 60px 0;
+  }
+  
+
+  .contact-container form{
+     padding-top: 30px;
+  }
+
+  .contact-container form label{
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0 0 10px 0px;
+	opacity: .8;
+  }
+
+  
+  .contact-container form input{
+	padding:5px 10px;
+	width: 100%;
+	color:var(--bold-color);
+	font-weight: 600;
+	opacity: .8;
+	border:3px solid var(--text-color);
+	background: transparent;
+	outline: none;
+	border-radius: 4px;
+  }
+  
+  .contact-container form textarea{
+	 width: 100%;
+	border:3px solid var(--text-color);
+	outline: none;
+	padding: 10px;
+	font-weight: 600;
+	background:transparent;
+	border-radius: 4px;
+  }
+
+  .contact-container .form-button{
+	  text-align: center;
+  }
+  
+  .contact-container  form .button{
+	margin-top: 10px;
+	padding:14px 50px;
+	border:2px solid var(--main-color);
+	background: var(--main-color);
+	border-radius: 4px;
+	color: var(--title-color);
+	font-size: 16px;
+	font-weight: 600;
+  
+  }
+  .contact-container .contact-title{
+	 text-align: center;
+	 font-weight:600;
+	 margin: 0;
+  }
+  
+  
+  .contact-container .block{
+    height: 180px;
+    flex-direction: column;
+}
+
+.contact-container .block h2{
+    font-size: 28px;
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+
+.contact-container .block a:hover{
+    color: var(--bold-color);
+}
